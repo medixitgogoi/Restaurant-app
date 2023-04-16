@@ -1,13 +1,13 @@
 import React from 'react';
 import './Footer.css';
-import {FooterOverlay, Newsletter} from "../../components";
-import {images} from "../../constants";
-import {FiFacebook, FiTwitter, FiInstagram} from "react-icons/fi";
+import { FooterOverlay, Newsletter } from "../../components";
+import { images } from "../../constants";
+import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 
 const Footer = () => (
   <div className='app__footer section__padding'>
 
-    <FooterOverlay />
+    {/* <FooterOverlay /> */}
     <Newsletter />
 
     <div className="app__footer-links">
@@ -18,11 +18,11 @@ const Footer = () => (
         <p className="p__opensans">+91 1234567890</p>
         <p className="p__opensans">+91 9876543210</p>
       </div>
-      
+
       <div className="app__footer-links_logo">
-        <h1 style={{fontFamily: "'Cormorant Upright', serif", color: "var(--color-white)", fontSize: "35px"}}>SaffronSpice</h1>
+        <h1 style={{ fontFamily: "'Cormorant Upright', serif", color: "var(--color-white)", fontSize: "30px", marginBottom: "0.8rem" }}>SaffronSpice</h1>
         <p className="p__opensans">The best way to find yourself is to lose yourself in the servce of others.</p>
-        <img src={images.spoon} alt="spoon-img" style={{ marginTop: '15'}} className="spoon__img" />
+        <img src={images.spoon} alt="spoon-img" style={{ marginTop: '15' }} className="spoon__img" />
         <div className="app__footer-links_icons">
           <FiFacebook />
           <FiTwitter />

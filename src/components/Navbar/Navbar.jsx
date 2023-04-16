@@ -1,7 +1,7 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-import {images} from '../../constants';
+import { images } from '../../constants';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <a href="#home" className='app__navbar-logo'>
-        <h1 style={{fontFamily: "'Cormorant Upright', serif", color: "var(--color-golden)", fontSize: "40px", marginLeft: "3.5rem"}}>SaffronSpice</h1>
+        <h1 style={{ fontFamily: "'Cormorant Upright', serif", color: "var(--color-golden)", fontSize: "30px", marginLeft: "0.8rem" }}>SaffronSpice</h1>
       </a>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="#home">Home</a></li>
@@ -23,6 +23,7 @@ const Navbar = () => {
         <div />
         <a href="/" className="p__opensans">Book Table</a>
       </div>
+
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
@@ -38,6 +39,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+
     </nav>
   );
 };

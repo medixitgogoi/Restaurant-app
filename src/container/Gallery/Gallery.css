@@ -33,8 +33,9 @@
   flex-direction: row;
   width: max-content;
   overflow-x: scroll;
+  border-radius: 0.5rem;
   -ms-overflow-style: none;
-  scrollbar-width: none;  
+  scrollbar-width: none;
 }
 
 .app__gallery-images_container::-webkit-scrollbar {
@@ -43,17 +44,17 @@
 
 .app__gallery-images_card {
   position: relative;
-  min-width: 301px;
-  height: 447px;
-  margin-right: 2rem;
+  min-width: 250px;
+  height: 400px;
+  margin-right: 1rem;
 }
 
 .gallery__image-icon {
   position: absolute;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
@@ -62,11 +63,11 @@
   height: 100%;
   object-fit: cover;
   opacity: 1;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .app__gallery-images_card:hover img {
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .app__gallery-images_card:hover .gallery__image-icon {
@@ -86,7 +87,7 @@
 
 .gallery__arrow-icon {
   color: var(--color-golden);
-  font-size: 2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   background: var(--color-black);
   border-radius: 5px;
@@ -98,48 +99,48 @@
 
 @media screen and (min-width: 2000px) {
   .app__gallery-content button {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
 
   .app__gallery-content {
-      min-width: 1000px;
-      padding-right: 4rem;
+    min-width: 1000px;
+    padding-right: 4rem;
   }
 
   .app__gallery-images_card {
-      min-width: 400px;
-      height: 547px;
+    min-width: 400px;
+    height: 547px;
   }
 }
 
 @media screen and (max-width: 1150px) {
   .app__gallery {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .app__gallery-images {
-      max-width: 100%;
-      margin: 5rem 0;
+    max-width: 100%;
+    margin: 5rem 0;
   }
 }
 
 @media screen and (max-width: 850px) {
   .app__gallery {
-      padding: 4rem 0 4rem 4rem;
+    padding: 4rem 0 4rem 4rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .app__gallery {
-      padding: 4rem 0 4rem 2rem;
-  }  
-  
+    padding: 4rem 0 4rem 2rem;
+  }
+
   .app__gallery-content {
-      min-width: 100%;
+    min-width: 100%;
   }
 
   .app__gallery-images_card {
-      min-width: 240px;
-      height: 320px;
+    min-width: 240px;
+    height: 320px;
   }
 }

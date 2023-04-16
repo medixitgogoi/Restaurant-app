@@ -1,12 +1,13 @@
 .app__chef {
   background: black;
+  /* height: 100vh; */
 }
 
 .app__chef-content {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .app__chef-content_quote {
@@ -23,7 +24,7 @@
 
 .app__chef-sign {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 
 .app__chef-sign p:first-child {
@@ -37,8 +38,10 @@
 }
 
 .app__chef-sign img {
-  width: 200px;
-  margin-top: 3rem;
+  width: 150px;
+  height: 300px;
+  /* aspect-ratio: 1/1; */
+  /* margin-top: 3rem; */
 }
 
 @media screen and (max-width: 2000px) {
